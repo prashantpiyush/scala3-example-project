@@ -6,5 +6,8 @@ lazy val root = project
     version := "0.1.0",
     scalaVersion := "3.4.2",
     scalacOptions ++= Seq("-deprecation"),
-    libraryDependencies += "org.scalameta" %% "munit" % "1.0.0" % Test
+    libraryDependencies ++= Seq(
+      "org.scalameta" %% "munit" % "1.0.0" % Test,
+      "ch.qos.logback" % "logback-classic" % "1.2.3" % Compile
+    )
   )
